@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<schema xmlns="http://www.w3.org/2001/XMLSchema" 
+targetNamespace="http://www.adhi.com/cource" 
+xmlns:tns="http://www.adhi.com/cource"   elementFormDefault="qualified">
+<element name="getCourceDetailsRequest">
+<complexType>
+<sequence>
+<element name="id" type="integer"></element>
+</sequence>
+</complexType>
+</element>
+
+
+<element name="getCourceDetailsResponse">
+<complexType>
+<sequence>
+<element name="courceDetails" type="tns:courceDetails"></element>
+</sequence>
+</complexType>
+</element>
+
+<complexType name="courceDetails">
+<sequence>
+<element name="id" type="integer"></element>
+<element name="cource" type="string"></element>
+<element name="description" type="string"></element>
+</sequence>
+</complexType>
+
+
+</schema>
